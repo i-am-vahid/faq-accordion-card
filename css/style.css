@@ -130,20 +130,21 @@ picture {
   margin-bottom: 10px;
   cursor: pointer;
 }
-.container__texts--boxs .box:hover {
-  grid-template-rows: 1fr 1fr;
-}
 .container__texts--boxs .box .question {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .container__texts--boxs .box .question p {
+  transition: 0.4s ease;
   font-weight: 400;
   color: var(--Very-dark-grayish-blue);
 }
 .container__texts--boxs .box .question p:hover {
   color: var(--Soft-red);
+}
+.container__texts--boxs .box .question img {
+  transition: 0.4s;
 }
 .container__texts--boxs .box .answer {
   color: var(--Dark-grayish-blue);
@@ -155,4 +156,18 @@ picture {
   .container__texts--boxs .box .answer {
     padding-right: 40px;
   }
+}
+
+.active {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.bold {
+  font-size: 17px;
+  color: var(--Very-dark-desaturated-blue);
+}
+
+.rotate {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=style.css.map */

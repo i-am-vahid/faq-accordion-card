@@ -1,0 +1,14 @@
+
+.active{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.bold{
+    font-size: 17px;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.rotate{
+    transform: rotate(180deg);
+}

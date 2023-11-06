@@ -30,8 +30,8 @@ img {
   max-width: 100%;
 }
 
-body {
-  background-color: red;
+picture {
+  max-width: 100%;
 }
 
 main {
@@ -39,10 +39,6 @@ main {
   place-content: center;
   height: 100vh;
   background: linear-gradient(to bottom, var(--Soft-violet), var(--Soft-blue));
-}
-
-picture {
-  max-width: 100%;
 }
 
 .container {
@@ -61,6 +57,7 @@ picture {
     grid-template-columns: repeat(2, 50%);
   }
 }
+
 .container__pic {
   height: 130px;
   background: url(./../images/bg-pattern-mobile.svg);
@@ -98,6 +95,7 @@ picture {
     transform: translate(-70px, 50px);
   }
 }
+
 @media (min-width: 954px) {
   .container__texts {
     display: flex;
@@ -156,6 +154,18 @@ picture {
   .container__texts--boxs .box .answer {
     padding-right: 40px;
   }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+}
+.attribution a, .attribution a:visited, .attribution a:active {
+  color: aqua;
 }
 
 .active {

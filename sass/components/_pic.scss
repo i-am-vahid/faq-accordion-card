@@ -1,0 +1,36 @@
+.container{
+    &__pic{
+        height: 130px;
+        background: url(./../images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        @media (min-width:954px) {
+            height: 100%;
+            background-image: url(./../images/bg-pattern-desktop.svg);
+            background-position:  top -270px right 80px;
+            overflow: hidden;
+            background-size:200%;
+            &::before{
+                position: absolute;
+                content: '';
+                background-image: url(./../images/illustration-box-desktop.svg);
+                width: 24%;
+                height: 35%;
+                z-index: 1;
+                background-repeat: no-repeat;
+                top: 150px;
+                left: -130px;
+            }
+        }
+        & img{
+            width: 250px;
+            margin: -20px auto 0;
+            transform: translateY(-50%);
+            
+            @media (min-width:954px){
+                width: 500px;
+                transform: translate(-70px, 50px);
+            }
+        }
+    }
+}

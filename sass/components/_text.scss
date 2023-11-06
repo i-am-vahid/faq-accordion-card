@@ -1,0 +1,17 @@
+.container{
+    &__texts{
+        @media (min-width:954px) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 60px 0 20px 10px;
+        }
+        &--titel{
+            font-size: clamp(2rem, 0rem + 1vw , 3.5rem);
+            text-align: center;
+
+        }
+
+    }
+}
